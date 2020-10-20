@@ -4,33 +4,14 @@
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 21;
-  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      if (target.length) {
-        e.preventDefault();
-
-        var scrollto = target.offset().top - scrolltoOffset;
+  $(document).on('click', '.scrollto', function(e) {
+      let target = $(this.hash),
+          scrollto = target.offset().top - scrolltoOffset;
 
         $('html, body').animate({
           scrollTop: scrollto
         }, 800, 'easeInOutExpo');
-
-        // if ($(this).parents('.nav-menu, .mobile-nav').length) {
-        //   $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-        //   $(this).closest('li').addClass('active');
-        // }
-
-        // if ($('body').hasClass('mobile-nav-active')) {
-        //   $('body').removeClass('mobile-nav-active');
-        //   $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-        //   $('.mobile-nav-overly').fadeOut();
-        // }
-        return false;
-      }
-    }
   });
-
 
   // Back to top button
   $(window).scroll(function() {
@@ -44,15 +25,11 @@
   $('.back-to-top').click(function() {
     $('html, body').animate({
       scrollTop: 0
-    }, 1500, 'easeInOutExpo');
+    }, 1000, 'easeInOutExpo');
     return false;
   });
 
-  // jQuery counterUp
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
-  });
+
 
   // Skills section
   $('.skills-content').waypoint(function() {
@@ -62,7 +39,6 @@
   }, {
     offset: '80%'
   });
-
 
   // Porfolio isotope and filter
   $(window).on('load', function() {

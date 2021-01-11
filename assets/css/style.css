@@ -464,7 +464,6 @@ section {
 }
 
 .contact .info-box {
-  position: absolute;
   color: #444444;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);

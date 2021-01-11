@@ -472,6 +472,7 @@ section {
 }
 
 .contact .info-box i.bx {
+  position: absolute;
   font-size: 24px;
   color: #ffb727;
   border-radius: 50%;

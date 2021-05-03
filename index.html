@@ -68,26 +68,7 @@
 
   <main id="main">
     
-       <script>
-        (function(d,t) {
-          var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-          g.src="http://localhost:3000/embed.js"
-          s.parentNode.insertBefore(g,s);
-          g.onload=function(){
-            new window.ChaskiqMessengerEncrypted({
-              domain: 'http://localhost:3000',
-              ws:  'ws://localhost:3000/cable',
-              app_id: "WztnFc3Srk96XSNBRNdb41uw",
-              data: {
-                email: "user@email.com",
-                identifier_key: "INSERT_HMAC_VALUE_HERE",
-                properties: { }
-              },
-              lang: "USER_LANG_OR_DEFAULTS_TO_BROWSER_LANG" 
-            })
-          }
-        })(document,"script");
-      </script>
+    <iframe src="https://96606c6325eb.ngrok.io/webchat/webchat"></iframe>
     
     <section id="about" class="about">
       <div class="container">

@@ -43,6 +43,7 @@
 
   <link href="assets/css/style.css" rel="stylesheet">
   <script src="https://assets.flex.twilio.com/releases/flex-webchat-ui/2.8.1/twilio-flex-webchat.min.js" integrity="sha512-KzpB56iRohSbDOkfM/V0PTp9DGHMno2EJJx6Zg8Ul3byOV3xtAurIZ+NibcO+cc0SEDvodI/5SKMSv2p+gwSYw==" crossorigin></script>
+  <script src="https://07c89a8f92fc.ngrok.io/app/javascript/components/chat_widget.js" ></script>
 
 
 </head>
@@ -55,11 +56,7 @@
   
   
         <script>
-            const appConfig = {
-                accountSid:"AC8a80cfae6f45eaea46737d03f7b07218",
-                flexFlowSid:"FO88275d530644bb901458727602142a19"
-            };
-            Twilio.FlexWebChat.renderWebChat(appConfig);
+          <div data-react-class="chat_widget" data-react-props="{&quot;name&quot;:&quot;John&quot;}"></div>
         </script>
 
 

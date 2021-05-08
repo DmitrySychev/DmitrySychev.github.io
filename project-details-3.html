@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <script src="https://assets.flex.twilio.com/releases/flex-webchat-ui/2.8.1/twilio-flex-webchat.min.js" crossorigin></script>
+
+  
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YBJ71NE590"></script>
   <script>
@@ -126,7 +129,14 @@
     </section>
 
   </main>
-
+  
+  <script>
+    const appConfig = {
+        accountSid:"AC209c4628c779aca06bbb56b81de1802f",
+        flexFlowSid:"FOae80deeea2da9f8f049a57e8797cbedf"
+    };
+    Twilio.FlexWebChat.renderWebChat(appConfig);
+  </script>
 
   <footer id="footer">
     <div class="container">

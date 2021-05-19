@@ -130,13 +130,20 @@
 
   </main>
   
-  <script>
-    const appConfig = {
-        accountSid:"AC1f7bcb367f203b863dc3d5acdb376ea0",
-        flexFlowSid:"FO07dccf10f249db541b78b686ba202e61"
-    };
-    Twilio.FlexWebChat.renderWebChat(appConfig);
-  </script>
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://chatwoot-chirrup.herokuapp.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'di6HEU9Ayd5XYzqZukjdZDHT',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
 
   <footer id="footer">
     <div class="container">

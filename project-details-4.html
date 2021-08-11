@@ -3,8 +3,11 @@
 
 <head>
   
-    <script src="https://app.chirrup.chat/client/widgets/chirrup-chat-widget-script.js" crossorigin></script>
-    <link href="https://app.chirrup.chat/client/widgets/widgets/chirrup-chat-widget-stylesheet.css" rel="stylesheet">
+<!--     <script src="https://app.chirrup.chat/client/widgets/chirrup-chat-widget-script.js" crossorigin></script>
+    <link href="https://app.chirrup.chat/client/widgets/widgets/chirrup-chat-widget-stylesheet.css" rel="stylesheet"> -->
+  
+    <link rel="stylesheet" href="link-to-chirrup-chat-widget-stylesheet.min.css" />  
+    <script src="link-to-chirrup-chat-widget-script.min.js"></script>  
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YBJ71NE590"></script>
@@ -145,7 +148,12 @@
   
   
 
-    <div id="chirrup-chat-widget"></div>
+<!--     <div id="chirrup-chat-widget"></div> -->
+  
+    <div id="chirrup-chat-widget"></div>  
+        <script>    
+          chirrupWidgetInit("25");  
+    </script>  
   
 
   <footer id="footer">
